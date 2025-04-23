@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f4f8;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #34495e;
+            font-size: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🛩️ Aviation Weather Summary</h1>
+
+    <form method="POST">
+        <input type="text" name="route" placeholder="Enter route (e.g. VABB to VIDP)" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if summary %}
+        {% set parts = summary.split('\n\n') %}
+        {% for part in parts %}
+    {% set lines = part.split('\n') %}
+    {% if lines | length > 1 %}
+        <div class="card">
+            <h2>{{ lines[0] }}</h2>
+            <pre>{{ lines[1:] | join('\n') }}</pre>
+        </div>
+    {% endif %}
+{% endfor %}
+
+    {% endif %}
+</div>
+</body>
+</html>
