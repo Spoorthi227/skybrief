@@ -74,7 +74,7 @@ There’s a pressing need for a smart assistant that can:
 ## Methodology
 
 1. **Parse Flight Plan**
-   - Input: List of ICAO/IATA airport codes with optional altitudes
+   - Input: List of ICAO/IATA airport codes and altitudes
    - Output: Structured list of waypoints and flight levels
 
 2. **Fetch Weather Data**
