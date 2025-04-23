@@ -1,4 +1,4 @@
-# ✈ SkyBrief - Smart Pre-Flight Weather Briefing System
+# ✈ SkyBrief -  Smart Flight Weather Briefing System
 
 > **Weather conditions are critical for safe and efficient flight operations.**  
 > SkyBrief simplifies complex aviation weather data into intelligent, real-time briefings with route-based visualizations.
