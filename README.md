@@ -97,14 +97,14 @@ There’s a pressing need for a smart assistant that can:
    ```bash
    git clone https://github.com/your-username/skybrief.git
    cd skybrief
-2. ** Create and Activate Virtual Environment**  
+2. **Create and Activate Virtual Environment**  
    ```bash
    python -m venv venv
    venv\Scripts\activate
-3. ** Install Required Dependencies**  
+3. **Install Required Dependencies**  
    ```bash
    pip install flask flask-cors
-4. ** Run the Flask Server**  
+4. **Run the Flask Server**  
    ```bash
    python app.py
 Server will start on:
