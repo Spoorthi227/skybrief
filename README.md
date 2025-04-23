@@ -1,11 +1,11 @@
-# ✈️ SkyBrief - Smart Pre-Flight Weather Briefing System
+# ✈ SkyBrief - Smart Pre-Flight Weather Briefing System
 
 > **Weather conditions are critical for safe and efficient flight operations.**  
 > SkyBrief simplifies complex aviation weather data into intelligent, real-time briefings with route-based visualizations.
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Modern pilots must interpret weather from multiple coded formats like METAR, TAF, SIGMET, and PIREPs before every flight. This task is:
 
@@ -20,7 +20,7 @@ There’s a pressing need for a smart assistant that can:
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 **SkyBrief** is a web-based tool designed to:
 - Fetch **live aviation weather data** in real-time
@@ -30,20 +30,20 @@ There’s a pressing need for a smart assistant that can:
 
 ---
 
-## 🔍 Innovative Features
+## Innovative Features
 
 | Feature | Description |
 |--------|-------------|
-| 💬 Natural Language Briefing | Converts METAR/TAF into simple, readable summaries |
-| 🚨 Critical Alert Detection | Flags hazards from SIGMETs and PIREPs |
-| 📶 Altitude-Based Filtering | Filters weather reports based on planned flight levels |
-| 🔴🟡🟢 Risk Tagging | Tags each waypoint with a color-coded risk level |
-| 🗺️ Route Map | Visualizes the entire flight path on a map |
-| 📈 Weather Overlay (Planned) | Future feature for dynamic weather overlays on the route |
+| Natural Language Briefing | Converts METAR/TAF into simple, readable summaries |
+| Critical Alert Detection | Flags hazards from SIGMETs and PIREPs |
+| Altitude-Based Filtering | Filters weather reports based on planned flight levels |
+| Risk Tagging | Tags each waypoint with a color-coded risk level |
+| Route Map | Visualizes the entire flight path on a map |
+| Weather Overlay (Planned) | Future feature for dynamic weather overlays on the route |
 
 ---
 
-## 🧪 Preliminary Solution
+## Preliminary Solution
 
 - Provide a **real-time textual summary** and **visual map**
 - Decode and format:
@@ -55,7 +55,7 @@ There’s a pressing need for a smart assistant that can:
 
 ---
 
-## 🧰 Technology Stack
+## Technology Stack
 
 ### Frontend:
 - HTML + CSS + JS
@@ -71,7 +71,7 @@ There’s a pressing need for a smart assistant that can:
 
 ---
 
-## 🛠️ Methodology
+## Methodology
 
 1. **Parse Flight Plan**
    - Input: List of ICAO/IATA airport codes with optional altitudes
@@ -91,7 +91,7 @@ There’s a pressing need for a smart assistant that can:
 
 ---
 
-## 📦 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repo**  
    ```bash
