@@ -96,4 +96,4 @@ There’s a pressing need for a smart assistant that can:
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/your-username/skybrief.git
-   cd skybrief```
+   cd skybrief
